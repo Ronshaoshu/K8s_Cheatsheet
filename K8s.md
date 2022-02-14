@@ -14,4 +14,6 @@ kubectl get all -n $namespace
 kubectl get -n $namespace $service/deployment -o yaml
 ```
 
-****
+**Use rollout to restart the deployment**
+
+``kubectl rollout restart deployment <deployment_name> -n <namespace>``
